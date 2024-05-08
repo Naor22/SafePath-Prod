@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.hero_image {
+  background-image: url(/public/assets/hero_image.jpeg);
+}
+
+.step-primary::after{
+  transition: all 0.4s ease-in-out !important;
+}
+
+
+
+.step-primary::before {
+  transition: all 0.4s ease-in-out !important;
+}
