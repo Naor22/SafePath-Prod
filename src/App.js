@@ -6,6 +6,7 @@ import Team from "./components/Team";
 import SystemDiagram from "./components/SystemDiagram";
 import Algorithms from "./components/Algorithems";
 import Example from "./components/Example";
+import SystemFlow from "./components/SystemFlow";
 
 export default function App() {
   const HomeRef = useRef(null);
@@ -51,7 +52,9 @@ export default function App() {
           <Background />
         </section>
 
-        <section ref={SystemFlowSectionRef} className="min-h-[100dvh] bg-slate-200"></section>
+        <section ref={SystemFlowSectionRef} className="min-h-[100dvh] bg-slate-200 pt-10">
+          <SystemFlow/>
+        </section>
 
         <section
           className="min-h-[100dvh] max-h-[100dvh] "
@@ -60,17 +63,21 @@ export default function App() {
           <SystemDiagram />
         </section>
 
-        <section ref={AlgorithmSectionRef} className="min-h-[100dvh] ">
+        <section ref={AlgorithmSectionRef} className="min-h-[100dvh]  bg-slate-200 pt-10">
           <Algorithms />
         </section>
 
-        <section className="min-h-[100dvh] ">
+
+        <section ref={ExampleSectionRef} className="min-h-[100dvh] pt-10  ">
           <Example />
         </section>
 
-        <section className="min-h-[100dvh] ">
+        <section ref={TeamSectionRef}  className="min-h-[100dvh] pt-10 bg-slate-200">
           <Team />
         </section>
+
+
+       
 
       </main>
     </div>

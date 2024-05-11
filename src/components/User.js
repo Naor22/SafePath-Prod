@@ -5,7 +5,8 @@ const User = ({ userName, image }) => {
         <img src={image} alt="user-img" />
       </figure>
       <div className="card-body">
-        <h2 className="user-name text-center">{userName}</h2>
+        <h2 className="user-name text-center text-xl">{userName}</h2>
+        <p className="role text-center font-normal">Computer Science Student</p>
       </div>
     </div>
   );

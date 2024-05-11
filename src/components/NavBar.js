@@ -33,30 +33,24 @@ const NavBar = ({ refItems = [], homeRef }) => {
               tabindex="0"
               class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
+                {refItems.map((item) => (
               <li>
-                <button>Item 1</button>
+                <button onClick={() => scrollToSection(item.ref)}>
+                  {item.name}
+                </button>
               </li>
-              <li>
-                <button>Parent</button>
-                <ul class="p-2">
-                  <li>
-                    <button>Submenu 1</button>
-                  </li>
-                  <li>
-                    <button>Submenu 2</button>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <button>Item 3</button>
-              </li>
+            ))}
             </ul>
+          </div>
+          <div className="h-[3rem] min-h-3">
+          <img className="w-full min-h-10 min-w-10 h-full" src="/assets/safePathIconBig.svg" alt="safe path icon"/>
+
           </div>
           <button
             onClick={() => scrollToSection(homeRef)}
             class="btn btn-ghost text-xl"
           >
-            SafePath
+         SafePath
           </button>
         </div>
         <div class="navbar-center hidden lg:flex">
@@ -71,7 +65,9 @@ const NavBar = ({ refItems = [], homeRef }) => {
           </ul>
         </div>
         <div class="navbar-end">
-          <button class="btn">Button</button>
+        <a href="https://safe-path-prod.netlify.app/">
+          <button  class="btn btn-active btn-primary">Demo</button>
+          </a>
         </div>
       </div>
     </>
