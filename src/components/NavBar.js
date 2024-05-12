@@ -65,6 +65,9 @@ const NavBar = ({ refItems = [], homeRef }) => {
           </ul>
         </div>
         <div class="navbar-end">
+        <div className="h-14 mr-10">
+            <img src="/assets/sapirLogo.svg" alt="safe path icon" class="w-full h-full mix-blend-multiply " />
+          </div>
         <a href="https://safe-path-prod.netlify.app/">
           <button  class="btn btn-active btn-primary">Demo</button>
           </a>
