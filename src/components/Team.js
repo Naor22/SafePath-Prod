@@ -28,7 +28,7 @@ const Team = () => {
             <br />
             Providing reliable tech since 2024
             <br />
-            Instructor Dr Ami Haoptman
+            Instructor Dr. Ami Hauptman
           </p>
         </aside>
         <nav>
