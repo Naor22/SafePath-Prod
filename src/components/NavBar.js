@@ -33,24 +33,27 @@ const NavBar = ({ refItems = [], homeRef }) => {
               tabindex="0"
               class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
-                {refItems.map((item) => (
-              <li>
-                <button onClick={() => scrollToSection(item.ref)}>
-                  {item.name}
-                </button>
-              </li>
-            ))}
+              {refItems.map((item) => (
+                <li>
+                  <button onClick={() => scrollToSection(item.ref)}>
+                    {item.name}
+                  </button>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="h-[3rem] min-h-3">
-          <img className="w-full min-h-10 min-w-10 h-full" src="/assets/safePathIconBig.svg" alt="safe path icon"/>
-
+            <img
+              className="w-full min-h-10 min-w-10 h-full"
+              src="/assets/safePathIconBig.svg"
+              alt="safe path icon"
+            />
           </div>
           <button
             onClick={() => scrollToSection(homeRef)}
             class="btn btn-ghost text-xl"
           >
-         SafePath
+            SafePath
           </button>
         </div>
         <div class="navbar-center hidden lg:flex">
@@ -65,11 +68,15 @@ const NavBar = ({ refItems = [], homeRef }) => {
           </ul>
         </div>
         <div class="navbar-end">
-        <div className="h-14 mr-10">
-            <img src="/assets/sapirLogo.svg" alt="safe path icon" class="w-full h-full mix-blend-multiply " />
+          <div className="h-14 mr-10">
+            <img
+              src="/assets/sapirLogo.svg"
+              alt="safe path icon"
+              class="w-full h-full mix-blend-multiply "
+            />
           </div>
-        <a href="https://safe-path-prod.netlify.app/">
-          <button  class="btn btn-active btn-primary">Demo</button>
+          <a href="https://safespath.com/">
+            <button class="btn btn-active btn-primary">Demo</button>
           </a>
         </div>
       </div>
