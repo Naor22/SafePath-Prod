@@ -152,7 +152,7 @@ const Card = ({ title, text, img, id, idxActive, minimal }) => {
 
   return (
     <div
-      className={`w-20 md:w-full py-[50%] md:py-2 min-w-full h-28 md:h-full shadow-lg overflow-hidden rounded-xl px-2 flex justify-center flex-col items-center ${
+      className={` w-20 md:w-full py-[50%] md:py-2 min-w-40 min-h-24 h-28 md:h-full shadow-lg overflow-hidden rounded-xl px-2 flex justify-center flex-col items-center ${
         isActive ? "bg-lime-300" : "bg-base-400"
       } transition-all ease-in duration-200`}
       
