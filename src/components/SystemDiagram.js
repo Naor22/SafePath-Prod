@@ -152,18 +152,18 @@ const Card = ({ title, text, img, id, idxActive, minimal }) => {
 
   return (
     <div
-      className={`w-20 md:w-full py-[50%] md:py-2 min-w-full h-28 md:h-full shadow-lg overflow-hidden rounded-xl px-2 ${
+      className={`w-20 md:w-full py-[50%] md:py-2 min-w-full h-28 md:h-full shadow-lg overflow-hidden rounded-xl px-2 flex justify-center flex-col items-center ${
         isActive ? "bg-lime-300" : "bg-base-400"
       } transition-all ease-in duration-200`}
       
     >
-      <div className="flex justify-center">
+      <div className="flex justify-center max-w-10 ">
         {img}
       </div>
       {!minimal &&
       <div>
-        <h1 className="text-center text-lg font-semibold">{title}</h1>
-        <p className="text-center">{text}</p>
+        <h1 className="text-center text-md font-semibold">{title}</h1>
+        <p className="text-center text-sm">{text}</p>
       </div>
 }
     </div>
